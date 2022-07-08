@@ -1,6 +1,6 @@
 import { DataGrid, GridColDef, GridRowsProp } from '@mui/x-data-grid'
-import { Data } from '../models/api'
-import { mapScoreToRows, renderRating } from '../utils/table'
+import { Data } from '../models/api.model'
+import { mapScoreToRows, renderRating } from '../utils/table.util'
 
 export default function Table({ data }: { data: Data }) {
   const rows: GridRowsProp = mapScoreToRows(data.overall_score)

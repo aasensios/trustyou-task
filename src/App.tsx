@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Table from './components/Table'
-import { ReviewDistribution } from './models/api'
-import { fetchReviewDistribution } from './services/api'
+import { ReviewDistribution } from './models/api.model'
+import { fetchReviewDistribution } from './services/api.service'
 import './App.css'
 import Pie from './components/Pie'
 

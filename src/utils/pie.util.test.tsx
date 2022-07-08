@@ -1,6 +1,6 @@
-import { OverallScore } from '../models/api'
-import { PieSlice } from '../models/app'
-import { mapScoreToPieSlice } from '../utils/pie'
+import { OverallScore } from '../models/api.model'
+import { PieSlice } from '../models/app.model'
+import { mapScoreToPieSlice } from './pie.util'
 import { describe, expect, it } from 'vitest'
 
 describe('mapScoreToPieSlice function', () => {

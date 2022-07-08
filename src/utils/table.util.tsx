@@ -1,9 +1,9 @@
 import { Box } from '@mui/material'
 import { ReactNode } from 'react'
 import RatingStars from '../components/RatingStars'
-import { nullKeyLabel } from '../constants/app'
-import { OverallScore } from '../models/api'
-import { Score } from '../models/app'
+import { nullKeyLabel } from '../constants/app.constant'
+import { OverallScore } from '../models/api.model'
+import { Score } from '../models/app.model'
 
 export function mapScoreToRows(score: OverallScore): Score[] {
   return Object.entries(score)

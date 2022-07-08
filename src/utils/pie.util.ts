@@ -1,6 +1,6 @@
-import { nullKeyLabel } from '../constants/app'
-import { OverallScore } from '../models/api'
-import { PieSlice } from '../models/app'
+import { nullKeyLabel } from '../constants/app.constant'
+import { OverallScore } from '../models/api.model'
+import { PieSlice } from '../models/app.model'
 
 function hue(rating: string): number {
   const numericRating = isNaN(Number(rating)) ? 50 : Number(rating)
