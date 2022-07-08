@@ -19,12 +19,13 @@ export default function App() {
   return (
     <div className="app">
       <h1>TrustYou Probation Task</h1>
-      <section className="table-section">
-        <h2>First subtask: Table</h2>
+      <h2>Review Distribution</h2>
+      <section className="section table">
+        <h3>Table</h3>
         {reviewDistribution && <Table data={reviewDistribution.data} />}
       </section>
-      <section className="pie-section">
-        <h2>Second subtask: Pie Chart</h2>
+      <section className="section pie">
+        <h3>Pie Chart</h3>
         {reviewDistribution && <Pie data={reviewDistribution.data} />}
       </section>
     </div>

@@ -1,9 +1,9 @@
 import { ResponsivePie } from '@nivo/pie'
 import { Data } from '../models/api'
-import { mapToPieSlice } from '../utils/pie'
+import { mapScoreToPieSlice } from '../utils/pie'
 
 export default function Pie({ data }: { data: Data }) {
-  const pieSlices = mapToPieSlice(data.overall_score)
+  const pieSlices = mapScoreToPieSlice(data.overall_score)
 
   return (
     <ResponsivePie

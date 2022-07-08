@@ -2,8 +2,17 @@
   display: flex;
   flex-direction: column;
   padding-inline: 5vw;
+  text-align: center;
 }
 
-.pie-section {
+.section.table {
+  align-self: center;
+}
+
+.table {
+  width: 414px;
+}
+
+.pie {
   height: 500px;
 }

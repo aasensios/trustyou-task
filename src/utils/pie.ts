@@ -6,7 +6,7 @@ function hue(rating: string): number {
   return 250 + 50 * numericRating
 }
 
-export function mapToPieSlice(score: OverallScore): PieSlice[] {
+export function mapScoreToPieSlice(score: OverallScore): PieSlice[] {
   return Object.entries(score)
     .map(([rating, amount]) => ({
       id: rating,

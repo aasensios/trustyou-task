@@ -1,7 +1,7 @@
 import { OverallScore } from '../models/api'
 import { Score } from '../models/app'
 
-export function mapToRows(score: OverallScore): Score[] {
+export function mapScoreToRows(score: OverallScore): Score[] {
   return Object.entries(score)
     .map(([rating, amount]) => ({
       id: rating,
