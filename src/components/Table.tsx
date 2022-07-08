@@ -1,7 +1,6 @@
 import { DataGrid, GridColDef, GridRowsProp } from '@mui/x-data-grid'
 import { Data } from '../models/api'
-import { mapScoreToRows } from '../utils/table'
-import RatingStars from './RatingStars'
+import { mapScoreToRows, renderRating } from '../utils/table'
 
 export default function Table({ data }: { data: Data }) {
   const rows: GridRowsProp = mapScoreToRows(data.overall_score)
@@ -10,7 +9,7 @@ export default function Table({ data }: { data: Data }) {
     {
       field: 'rating',
       headerName: 'Rating',
-      renderCell: ({ value }) => <RatingStars value={Number(value)} />,
+      renderCell: ({ value }) => renderRating(value),
       width: 200,
     },
     {

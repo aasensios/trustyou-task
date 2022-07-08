@@ -16,3 +16,7 @@ export function mapScoreToPieSlice(score: OverallScore): PieSlice[] {
     }))
     .sort((a, b) => Number(b.label) - Number(a.label))
 }
+
+export function renderLabel(value: string): string {
+  return isNaN(Number(value)) ? 'Without rating' : value
+}

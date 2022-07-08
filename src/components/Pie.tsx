@@ -1,6 +1,6 @@
 import { ResponsivePie } from '@nivo/pie'
 import { Data } from '../models/api'
-import { mapScoreToPieSlice } from '../utils/pie'
+import { mapScoreToPieSlice, renderLabel } from '../utils/pie'
 
 export default function Pie({ data }: { data: Data }) {
   const pieSlices = mapScoreToPieSlice(data.overall_score)
@@ -19,6 +19,7 @@ export default function Pie({ data }: { data: Data }) {
         from: 'color',
         modifiers: [['darker', 0.2]],
       }}
+      arcLinkLabel={(value) => renderLabel(value.label as string)}
       arcLinkLabelsThickness={2}
       arcLinkLabelsColor={{ from: 'color' }}
       arcLabelsSkipAngle={10}
