@@ -19,7 +19,6 @@ export default function Pie({ data }: { data: Data }) {
         from: 'color',
         modifiers: [['darker', 0.2]],
       }}
-      // arcLinkLabelsTextColor="#333333"
       arcLinkLabelsThickness={2}
       arcLinkLabelsColor={{ from: 'color' }}
       arcLabelsSkipAngle={10}
@@ -27,7 +26,7 @@ export default function Pie({ data }: { data: Data }) {
         from: 'color',
         modifiers: [['darker', 2]],
       }}
-      // colors={{ datum: 'data.color' }}
+      colors={{ datum: 'data.color' }}
     />
   )
 }
