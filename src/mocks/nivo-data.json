@@ -1,0 +1,32 @@
+[
+  {
+    "id": "lisp",
+    "label": "lisp",
+    "value": 475,
+    "color": "hsl(158, 70%, 50%)"
+  },
+  {
+    "id": "rust",
+    "label": "rust",
+    "value": 348,
+    "color": "hsl(158, 70%, 50%)"
+  },
+  {
+    "id": "make",
+    "label": "make",
+    "value": 160,
+    "color": "hsl(98, 70%, 50%)"
+  },
+  {
+    "id": "elixir",
+    "label": "elixir",
+    "value": 320,
+    "color": "hsl(230, 70%, 50%)"
+  },
+  {
+    "id": "erlang",
+    "label": "erlang",
+    "value": 478,
+    "color": "hsl(169, 70%, 50%)"
+  }
+]

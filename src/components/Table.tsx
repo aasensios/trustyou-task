@@ -1,12 +1,18 @@
 import { DataGrid, GridColDef, GridRowsProp } from '@mui/x-data-grid'
 import { Data } from '../models/api'
 import { mapToRows } from '../utils/table'
+import RatingStars from './RatingStars'
 
 export default function Table({ data }: { data: Data }) {
   const rows: GridRowsProp = mapToRows(data.overall_score)
   const columns: GridColDef[] = [
     { field: 'id', hide: true },
-    { field: 'rating', headerName: 'Rating', width: 130 },
+    {
+      field: 'rating',
+      headerName: 'Rating',
+      renderCell: ({ value }) => <RatingStars value={Number(value)} />,
+      width: 200,
+    },
     {
       field: 'amount',
       headerName: 'Amount of reviews',
@@ -17,7 +23,7 @@ export default function Table({ data }: { data: Data }) {
 
   return (
     <div style={{ width: '100%' }}>
-      <DataGrid rows={rows} columns={columns} autoHeight pageSize={10} />
+      <DataGrid rows={rows} columns={columns} autoHeight hideFooter />
     </div>
   )
 }
