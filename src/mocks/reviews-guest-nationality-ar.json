@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "overall_score": null,
+      "guest_type": null,
+      "guest_age": null,
+      "guest_nationality": "AR",
+      "review_text": null,
+      "guest_email": "tester15065@yopmail.com",
+      "review_title": null,
+      "guest_name": "tester15065",
+      "review_id": "bf5f2831-90e5-43d6-93a6-9f9588c76454",
+      "hotel_id": "4a42684f-4946-4fff-80de-0d423bc3c188",
+      "creation_date": "2017-06-15T17:06:20"
+    },
+    {
+      "overall_score": null,
+      "guest_type": null,
+      "guest_age": null,
+      "guest_nationality": "AR",
+      "review_text": null,
+      "guest_email": "tester15064@yopmail.com",
+      "review_title": null,
+      "guest_name": "tester15064",
+      "review_id": "4507d245-5457-4cea-93de-4e472033be2a",
+      "hotel_id": "4a42684f-4946-4fff-80de-0d423bc3c188",
+      "creation_date": "2017-06-15T12:46:10"
+    },
+    {
+      "overall_score": null,
+      "guest_type": null,
+      "guest_age": null,
+      "guest_nationality": "AR",
+      "review_text": null,
+      "guest_email": "tester15063@yopmail.com",
+      "review_title": null,
+      "guest_name": "tester15063",
+      "review_id": "cf9dc23a-98a4-4c39-bce8-55d766a2e3b4",
+      "hotel_id": "4a42684f-4946-4fff-80de-0d423bc3c188",
+      "creation_date": "2017-06-15T12:38:56"
+    },
+    {
+      "overall_score": null,
+      "guest_type": null,
+      "guest_age": null,
+      "guest_nationality": "AR",
+      "review_text": null,
+      "guest_email": "tester15051@yopmail.com",
+      "review_title": null,
+      "guest_name": "tester15051",
+      "review_id": "ca035b87-1cc9-4990-8d2f-4196c3b85104",
+      "hotel_id": "4a42684f-4946-4fff-80de-0d423bc3c188",
+      "creation_date": "2017-06-15T12:28:23"
+    },
+    {
+      "overall_score": 4.5,
+      "guest_type": "business",
+      "guest_age": 25,
+      "guest_nationality": "AR",
+      "review_text": "This is a test review",
+      "guest_email": "tester03271@test.com",
+      "review_title": "This is a test title",
+      "guest_name": "tester03271",
+      "review_id": "2ed19495-f50e-4b9a-9fc6-dc40b6c38d97",
+      "hotel_id": "4a42684f-4946-4fff-80de-0d423bc3c188",
+      "creation_date": "2017-03-27T15:05:55"
+    }
+  ]
+}

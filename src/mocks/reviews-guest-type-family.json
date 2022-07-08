@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "overall_score": 3.5,
+      "guest_type": "family",
+      "guest_age": null,
+      "guest_nationality": null,
+      "review_text": "Test review 2",
+      "guest_email": "maxim.leonov+025@trustyou.net",
+      "review_title": "Test",
+      "guest_name": "Max",
+      "review_id": "aac8cbe5-272f-4d1f-8974-e15ca9bc6929",
+      "hotel_id": "4a42684f-4946-4fff-80de-0d423bc3c188",
+      "creation_date": "2017-07-13T11:21:22"
+    },
+    {
+      "overall_score": 4,
+      "guest_type": "family",
+      "guest_age": 22,
+      "guest_nationality": "BY",
+      "review_text": "test2",
+      "guest_email": "tester150611@yopmail.com",
+      "review_title": "test",
+      "guest_name": "tester150611",
+      "review_id": "6cb2844a-f1c5-41d8-a525-50d073c5dc6b",
+      "hotel_id": "4a42684f-4946-4fff-80de-0d423bc3c188",
+      "creation_date": "2017-06-15T17:50:39"
+    },
+    {
+      "overall_score": 4.5,
+      "guest_type": "family",
+      "guest_age": 25,
+      "guest_nationality": "FR",
+      "review_text": "This is a long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long  test review",
+      "guest_email": "tester04048@test.com",
+      "review_title": "This is a test title",
+      "guest_name": "Tester8",
+      "review_id": "ff0a6c2c-4a92-40d8-8b3b-dd01d0481a27",
+      "hotel_id": "4a42684f-4946-4fff-80de-0d423bc3c188",
+      "creation_date": "2017-04-04T16:31:32"
+    }
+  ]
+}
