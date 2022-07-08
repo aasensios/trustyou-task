@@ -1,6 +1,7 @@
 import { Box } from '@mui/material'
 import { ReactNode } from 'react'
 import RatingStars from '../components/RatingStars'
+import { nullKeyLabel } from '../constants/app'
 import { OverallScore } from '../models/api'
 import { Score } from '../models/app'
 
@@ -16,7 +17,7 @@ export function mapScoreToRows(score: OverallScore): Score[] {
 
 export function renderRating(value: any): ReactNode {
   return isNaN(Number(value)) ? (
-    'Without rating'
+    nullKeyLabel
   ) : (
     <Box
       sx={{

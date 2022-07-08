@@ -1,3 +1,4 @@
+import { nullKeyLabel } from '../constants/app'
 import { OverallScore } from '../models/api'
 import { PieSlice } from '../models/app'
 
@@ -18,5 +19,5 @@ export function mapScoreToPieSlice(score: OverallScore): PieSlice[] {
 }
 
 export function renderLabel(value: string): string {
-  return isNaN(Number(value)) ? 'Without rating' : value
+  return isNaN(Number(value)) ? nullKeyLabel : value
 }

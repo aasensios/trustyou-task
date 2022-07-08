@@ -1,3 +1,7 @@
+export interface Nullable {
+  null: number
+}
+
 export interface ReviewDistribution {
   data: Data
 }
@@ -9,25 +13,21 @@ export interface Data {
   guest_nationality: GuestNationality
 }
 
-export interface OverallScore {
+export interface OverallScore extends Nullable {
   [rating: string]: number
-  null: number
 }
 
-export interface GuestType {
+export interface GuestType extends Nullable {
   family: number
   friends: number
   business: number
   couple: number
-  null: number
 }
 
-export interface GuestAge {
+export interface GuestAge extends Nullable {
   [key: string]: number
-  null: number
 }
 
-export interface GuestNationality {
+export interface GuestNationality extends Nullable {
   [key: string]: number
-  null: number
 }
