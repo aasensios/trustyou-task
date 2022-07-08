@@ -1,19 +1,9 @@
 .app {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  padding: 7vw;
-}
-
-.section {
-  width: 80vw;
+  padding-inline: 5vw;
 }
 
 .pie-section {
   height: 500px;
-}
-
-button {
-  font-size: calc(10px + 2vmin);
 }
