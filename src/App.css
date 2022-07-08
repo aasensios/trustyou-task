@@ -1,16 +1,17 @@
 .app {
   display: flex;
   flex-direction: column;
-  padding-inline: 5vw;
   text-align: center;
+  padding-inline: 5vw;
 }
 
-.section.table {
+.section {
+  margin-top: 1rem;
+}
+
+section.table {
   align-self: center;
-}
-
-.table {
-  width: 414px;
+  width: 420px;
 }
 
 .pie {

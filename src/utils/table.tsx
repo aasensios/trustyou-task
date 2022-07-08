@@ -1,3 +1,4 @@
+import { Box } from '@mui/material'
 import { ReactNode } from 'react'
 import RatingStars from '../components/RatingStars'
 import { OverallScore } from '../models/api'
@@ -13,10 +14,17 @@ export function mapScoreToRows(score: OverallScore): Score[] {
     .sort((a, b) => Number(b.rating) - Number(a.rating))
 }
 
-export function renderRating(value: unknown): ReactNode {
+export function renderRating(value: any): ReactNode {
   return isNaN(Number(value)) ? (
     'Without rating'
   ) : (
-    <RatingStars value={Number(value)} />
+    <Box
+      sx={{
+        display: 'flex',
+      }}
+    >
+      <RatingStars value={Number(value)} />
+      <Box sx={{ ml: 2 }}>{value}</Box>
+    </Box>
   )
 }
