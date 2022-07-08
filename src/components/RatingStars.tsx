@@ -2,8 +2,6 @@ import Rating from '@mui/material/Rating'
 import StarIcon from '@mui/icons-material/Star'
 
 export default function RatingStars({ value }: { value: number }) {
-  console.log(value)
-
   return (
     <Rating
       name="half-rating-read"
