@@ -8,6 +8,7 @@ specifiers:
   '@mui/x-data-grid': 5.17.14
   '@nivo/core': 0.80.0
   '@nivo/pie': 0.80.0
+  '@tanstack/react-query': ^4.19.1
   '@testing-library/react': ^13.4.0
   '@types/react': ^18.0.26
   '@vitejs/plugin-react': ^3.0.0
@@ -25,6 +26,7 @@ dependencies:
   '@mui/x-data-grid': 5.17.14_ywbsaf22bjalctxw3wjvx24upy
   '@nivo/core': 0.80.0_g5kln477lwx3caqucf3exzf3du
   '@nivo/pie': 0.80.0_6zomopewppbkd5eeu2nbbcio3i
+  '@tanstack/react-query': 4.19.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -973,6 +975,28 @@ packages:
       '@react-spring/types': 9.4.5
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@tanstack/query-core/4.19.1:
+    resolution: {integrity: sha512-Zp0aIose5C8skBzqbVFGk9HJsPtUhRVDVNWIqVzFbGQQgYSeLZMd3Sdb4+EnA5wl1J7X+bre2PJGnQg9x/zHOA==}
+    dev: false
+
+  /@tanstack/react-query/4.19.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-5dvHvmc0vrWI03AJugzvKfirxCyCLe+qawrWFCXdu8t7dklIhJ7D5ZhgTypv7mMtIpdHPcECtCiT/+V74wCn2A==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      '@tanstack/query-core': 4.19.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
   /@testing-library/dom/8.19.0:
@@ -1962,6 +1986,14 @@ packages:
       browserslist: 4.21.4
       escalade: 3.1.1
       picocolors: 1.0.0
+
+  /use-sync-external-store/1.2.0_react@18.2.0:
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /vite/4.0.0:
     resolution: {integrity: sha512-ynad+4kYs8Jcnn8J7SacS9vAbk7eMy0xWg6E7bAhS1s79TK+D7tVFGXVZ55S7RNLRROU1rxoKlvZ/qjaB41DGA==}
