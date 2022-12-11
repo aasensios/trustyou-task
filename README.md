@@ -36,11 +36,14 @@ For this task we are asking for the implementation of a small frontend SPA appli
 
 ## Findings and thoughts during the coding process
 
-1. Try `Vite` and `pnpm` as project tooling to have a good performance for DX.
-2. Prioritize subtasks: table and pie
+1. Try `Vite` and `pnpm` as project tooling to have a good performance for developer experience (DX).
+2. Prioritize subtasks: table and pie.
 3. Handling of `"nulls"` as json keys in the API responses.
-4. Focus on UX: attractive and useful visualizations
+4. Focus on user experience (UX): attractive and useful visualizations
 
-Remote repository with the codebase of this little project: <https://github.com/aasensios/trustyou-task>
+Remote repository for this project: <https://github.com/aasensios/trustyou-task>
 
-> I want to see from inside some code repository and some demo of the product
+## Questions for the interviewers
+
+- Could I see some real project code?
+- Could you do a quick demo of the product?
