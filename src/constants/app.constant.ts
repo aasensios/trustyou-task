@@ -1,1 +1,1 @@
-export const nullKeyLabel = 'Without rating'
+export const LABEL_FOR_NULL = 'Without rating'

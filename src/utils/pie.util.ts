@@ -1,4 +1,4 @@
-import { nullKeyLabel } from '../constants/app.constant'
+import { LABEL_FOR_NULL } from '../constants/app.constant'
 import { OverallScore } from '../models/api.model'
 import { PieSlice } from '../models/app.model'
 
@@ -11,7 +11,7 @@ export function mapScoreToPieSlice(score: OverallScore): PieSlice[] {
   return Object.entries(score)
     .map(([rating, amount]) => ({
       id: rating,
-      label: rating,
+      label: isNaN(Number(rating)) ? '0' : rating,
       value: amount,
       color: `hsl(${hue(rating)}, 70%, 60%)`,
     }))
@@ -19,5 +19,5 @@ export function mapScoreToPieSlice(score: OverallScore): PieSlice[] {
 }
 
 export function renderLabel(value: string): string {
-  return isNaN(Number(value)) ? nullKeyLabel : value
+  return value === '0' ? LABEL_FOR_NULL : value
 }
