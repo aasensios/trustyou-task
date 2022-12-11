@@ -1,6 +1,6 @@
 export type Score = {
   id: string
-  rating: string
+  rating: number
   amount: number
 }
 

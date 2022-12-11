@@ -20,9 +20,5 @@ export default function Table({ data }: { data: Data }) {
     },
   ]
 
-  return (
-    <div style={{ width: '100%' }}>
-      <DataGrid rows={rows} columns={columns} autoHeight hideFooter />
-    </div>
-  )
+  return <DataGrid rows={rows} columns={columns} autoHeight hideFooter />
 }
