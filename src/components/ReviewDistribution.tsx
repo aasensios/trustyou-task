@@ -1,17 +1,23 @@
 import { useQuery } from '@tanstack/react-query'
 import { Stack, Typography } from '@mui/material'
-import { getReviewDistribution } from '../services/api.service'
+import {
+  getMockReviewDistribution,
+  getReviewDistribution,
+} from '../services/api.service'
 import Table from './Table'
 import Pie from './Pie'
 
 export default function ReviewDistribution() {
-  const { data, isSuccess } = useQuery({
+  const { data } = useQuery({
     queryKey: ['review-distribution'],
     queryFn: getReviewDistribution,
+    // queryFn: getMockReviewDistribution,
   })
 
-  return isSuccess ? (
-    <Stack spacing={2} sx={{ width: '420px', padding: '3vh' }}>
+  if (!data) return
+
+  return (
+    <Stack spacing={2} sx={{ maxWidth: 530, padding: 3 }}>
       <Typography variant="h4" component="h1">
         TrustYou Probation Task
       </Typography>
@@ -24,12 +30,12 @@ export default function ReviewDistribution() {
         </Typography>
         <Table data={data?.data} />
       </Stack>
-      <Stack sx={{ height: '420px' }}>
+      <Stack sx={{ height: 420 }}>
         <Typography variant="h6" component="h3">
           Pie Chart
         </Typography>
         <Pie data={data?.data} />
       </Stack>
     </Stack>
-  ) : null
+  )
 }
